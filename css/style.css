@@ -350,3 +350,78 @@ video {
   color: #fff;                     
   transform: translateX(5px);      
 }
+/* Responsive Adjustments for Mobile */
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .sidebar, .main-content {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .profile-pic {
+    max-width: 100%;
+  }
+
+  .contact-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-row .label {
+    min-width: auto;
+  }
+
+  .site-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.8rem;
+  }
+
+  .info-block h2,
+  .card h2,
+  .media-block h3 {
+    font-size: 1rem;
+  }
+
+  .page-description {
+    font-size: 0.95rem;
+  }
+
+  .edu-entry {
+    font-size: 0.88rem;
+    white-space: normal;
+  }
+
+  .cv-link {
+    width: 100%;
+    text-align: center;
+  }
+
+  .social-inline-links {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .link-pill {
+    font-size: 0.75rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .info-block.portfolio {
+    padding: 0.8rem;
+  }
+
+  footer {
+    font-size: 0.85rem;
+  }
+}
+
